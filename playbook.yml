@@ -1,0 +1,25 @@
+- hosts: all
+ 
+  tasks:
+  - name : Install unzip package
+    yum: name=unzip state=present update_cache=true
+
+  - name : Install unzip package
+    yum: name=unzip state=present update_cache=true
+
+  - name : Install the latest Nginx package
+    yum: name=nginx state=latest update_cache=true
+  
+  - name : Install multiple packages
+    yum: name={{ item }} state=latest update_cache=true
+    loop: [git, htop, httpd, wget, unzip, curl]
+  
+  - name : Update all packages
+    yum: name=* state=latest update_cache=true
+  
+  
+
+
+
+
+
