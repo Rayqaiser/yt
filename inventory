@@ -1,2 +1,2 @@
-10.0.2.15
-10.1.10.153
+target1 ansible_host=10.1.10.153 ansible_user=root ansible_ssh_pass=subway36@gmail.com
+
